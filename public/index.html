@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="login-screen">
+    <form id="login-form">
+      <h1>Entra al xat</h1>
+      <input type="text" id="name-input" maxlength="20" placeholder="El teu nom">
+      <p id="login-error"></p>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <div id="chat-screen" style="display: none;">
+    <div id="header">
+      <span>Xat - <b id="user-name"></b></span>
+      <span id="status">Connectat</span>
+    </div>
+
+    <div id="messages"></div>
+
+    <form id="message-form">
+      <input type="text" id="message-input" maxlength="500" placeholder="Escriu un missatge...">
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+}
+
+#login-screen {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#login-error {
+  color: red;
+}
+
+#chat-screen {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#header {
+  background: gray;
+  color: white;
+  padding: 5px;
+}
+
+#messages {
+  border: 1px solid black;
+  height: 500px;
+  width: 500px;
+  overflow-y: scroll;
+}
+
+.message .meta {
+  font-size: 10px;
+  color: gray;
+}
+
+#status.disconnected {
+  color: red;
+}
